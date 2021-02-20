@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newsoccer"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.yusuphw.infobola.MainActivity" >
+
+    <TextView
+        android:id="@+id/TitleApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Cari Info Club Berdasarkan:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#FFEFD5" />
+
+    <Button
+        android:id="@+id/btnNamaClub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnNamaLiga"
+        android:layout_alignRight="@+id/btnNamaLiga"
+        android:layout_below="@+id/TitleApp"
+        android:layout_marginTop="30dp"
+        android:text="Nama Club" />
+
+    <Button
+        android:id="@+id/btnNamaNegara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnNamaClub"
+        android:layout_alignRight="@+id/btnNamaClub"
+        android:layout_below="@+id/btnNamaClub"
+        android:layout_marginTop="30dp"
+        android:text="Negara" />
+
+    <Button
+        android:id="@+id/btnNamaLiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnNamaNegara"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Pertandingan Liga" />
+
+    <Button
+        android:id="@+id/btnKeluar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnNamaLiga"
+        android:layout_alignRight="@+id/btnNamaLiga"
+        android:layout_below="@+id/btnNamaLiga"
+        android:layout_marginTop="70dp"
+        android:text="Keluar" />
+
+</RelativeLayout>
